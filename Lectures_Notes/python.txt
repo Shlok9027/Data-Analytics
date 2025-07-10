@@ -1,0 +1,162 @@
+ --))
+
+To install in python --))pip install package_name
+
+                        pip => (package installer for python) 
+
+String are immutable in python. --> it can not makes changes.
+
+list are mutable in python. --> it can makes change.
+
+Tuple are immutable in Python.
+
+Dictionary in Python --))  
+
+            1.Dictionary are used to store data values in key:valiuies pairs .
+            2.They are unordered, mutable(changeable) & don't allow duplicate keys.
+
+            
+
+Set in Python --)) 
+
+                    Set is the collection of the unordered items.
+                    Each elements in the set must be unique and immutable.
+
+
+Loops in Python --))
+
+                    Loops are used to repeat instruction.
+
+
+
+Break --))  used to terminate the loop  when encounted. 
+
+Continue --))  terminates execution in the current iteration & continue execution of the loop with the next iteration.
+
+
+Range --))  range function returns a sequence of numbers, starting from 0 by default, and increments by 12 (by default),
+             and stops before a specified number.
+
+             range( start? , stop, step?)
+
+
+Functions --))  Block of statement that perform a specific task.
+
+
+Methods of Functions --))
+
+                        1. Built in Functions-  a.print()
+                                                b.len()
+                                                c.type()
+                                                d.rangle()
+                        
+                        2.
+
+    
+
+
+
+Recursions --)) when a function caalls itself repeatedly.
+
+
+File I/O --)) Python can be used to perform operations on a file. (read and write data)
+
+Types of all text --))
+                        #  1. Text File : .txt, /docs, .log etc.
+                        #  2. Binary Files : .mp4, .mov, .jpeg etc.abs
+
+RAM is volatile, so we need to store data in a non-volatile memory.
+
+
+Open, read & close file --)) f = open("file_name", "mode")
+
+
+data = f.read()
+
+f.close()
+
+Deleting a File --)) using the os module
+Module (like a code libary) is a file written by another programmer that generally has a function we can use.
+
+import od 
+os.remove(filename)
+
+
+OOP is Python --))
+
+To map with real world scenarios, we started using objects in code.
+
+This is called object oriented programming.
+
+to decrease redundancy and increase reusabilty.
+
+Class & Object in python --))
+
+                                Class is a blue print for creating objects
+
+
+Init Function --))
+
+construnctor --)) All classes have a function called_init_(), which is always  executed when the class is being initiated.
+
+
+Methods --))  Methods are functions that belong to objects.
+
+
+Static Methids --))
+
+                    Methods that don't use the self parameter (work at class level)
+
+Important --))
+
+                1. Abstraction --)) Hiding  the implementation details of a class and onlly showing the essential features to the user.
+
+                2. Encapsulation --)) Wrapping data and functions into a songle unit (object).
+
+del keyword --)) Used ti delete object properties or object itself.
+
+
+
+Private(like) attribute & Methods --))
+
+                           Conceptual Implenentation in python     
+                           
+                           Private attributes & methids are meant to be used within the class and are not accessible from outside the class.
+
+
+Inheritance --))
+                
+                When one class (child/ derived ) derives the properties & methods of another class(parent/ base).
+
+                Types -- 1. Single Inheritance
+                         2. Multi-level Inheritance
+                         3. MULTIPLE Inheritance
+
+                        
+
+Super Method --))
+
+                super() method is used to access methods of the parent class.
+
+Class Method --))
+
+                A class method is bound to the class & recieve the class as an implicit first argument.
+
+
+                Note- static method can't access or modify class state & generally for untility.
+
+
+Property --)) We use @Property decorator on any method in the class to use the method as a Property.
+
+
+Polymorphism : Operator Overloading --))
+                                        When the same operator is allowed to have different meaning according to the context.
+
+
+             Operaters & Dunder functions --))
+
+                                    a + b     #addition          a.__add__(b)
+                                    a - b     #sunstraction      a.__sub__(b)
+                                    a * b     #multiplication    a.__mul__(b)
+                                    a / b     #division          a.__div__(b)
+                                    a % b     #remainder         a.__rem__(b)
