@@ -1,0 +1,11 @@
+Pandas - pandas is most popular and powerful library in python used/ designed  for data manipulation (cleaning, transforming,and
+         structuring data) and data analysis (finding patterns, insights and trends).
+
+         Its simplifies working with structured datasets like tables, spreadsheets, or time-series data.
+
+Series - series is a one dimensional labeled array thsat holds string, integer, float also with python objects. each element in this 
+         series has a unique label called index.
+
+
+Data Frames - data frames are two dimensional labeled data structure in pandas, similar to a tables in database , excel spreadsheet
+              and SQL table.

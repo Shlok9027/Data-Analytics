@@ -12,10 +12,15 @@ print("SHLOK KUMAR");
 # # print(type(name));
 # # print(type(age));
 # # print(type(cgpa));
+# """
+# fruit = ["apple", "banana", "cherry", "mango","orange"];
 
-
+# a = 3.644
+# print(int(a));
+# print("bananaa" in fruit);
+# """
 # # age = 21;
-# # young = True;
+# # young = True;f
 # # job = None;
 
 # # print(type(young));
