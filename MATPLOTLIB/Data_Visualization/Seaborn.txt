@@ -1,0 +1,8 @@
+Seaborn --
+
+
+In normal distributation which i can get though plot of histogram / KDE ploy i can get an idea how is my distributation in  
+ND------Mean=Meduim=Module
+
+In Left skewed or right skewed distributation mean is not equal to medium is not equal to Mode.
+Mean is not equal to median is not equal to Mode
