@@ -86,8 +86,29 @@ print(data.tail())
 # sns.kdeplot(data['Year'])
 # plt.show()   
 
-plt.figure(figsize=(8,5))
+# plt.figure(figsize=(8,5))
 
-sns.boxplot(y=data['Global_Sales'])
-plt.yticks(fontsize=15)
+# sns.boxplot(y=data['Global_Sales'])
+# plt.yticks(fontsize=15)
+# plt.show()
+
+a = data.loc[data['Name']== 'Ice Hockey']
+print(a)
+print(a.shape)
+
+sns.lineplot(data = a, x = 'Year', y = 'NA_Sales')
+# plt.show()
+
+
+print(data['Name'].value_counts()) 
+
+print('\n')
+
+b =  data.loc[data['Name']=='Baseball']
+print(b)
+
+
+print(b.shape)
+
+sns.lineplot(data = b, x = 'Year', y = 'NA_Sales')
 plt.show()
