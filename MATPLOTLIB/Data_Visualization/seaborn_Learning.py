@@ -16,7 +16,7 @@ print(data.tail())
 
 
 # print(data.columns)
-# print(data.isnull().sum())
+print(data.isnull().sum())
 #Removing 4th indexed value from the dataframe
 # print(data.drop(4).head())
 # x = [0,1,2]
@@ -96,19 +96,62 @@ a = data.loc[data['Name']== 'Ice Hockey']
 print(a)
 print(a.shape)
 
-sns.lineplot(data = a, x = 'Year', y = 'NA_Sales')
+# sns.lineplot(data = a, x = 'Year', y = 'NA_Sales')
+# # plt.show()
+
+
+# print(data['Name'].value_counts()) 
+
+# print('\n')
+
+# b =  data.loc[data['Name']=='Baseball']
+# print(b)
+
+
+# print(b.shape)
+
+# sns.lineplot(data = b, x = 'Year', y = 'NA_Sales')
+# plt.show()
+
+# sns.lineplot(data=a, x='Year', y='NA_Sales')
 # plt.show()
 
 
-print(data['Name'].value_counts()) 
+# sns.scatterplot(data = a, x ='Year', y = 'EU_Sales')
+# plt.show()
+
 
 print('\n')
 
-b =  data.loc[data['Name']=='Baseball']
-print(b)
+
+top_3_pub = data['Publisher'].value_counts().index[:3]
 
 
-print(b.shape)
+top_3_gen = data['Genre'].value_counts().index[:3]
 
-sns.lineplot(data = b, x = 'Year', y = 'NA_Sales')
+top_5_platform = data['Platform'].value_counts().index[:3]
+
+print(f'publisher : ',top_3_pub)
+print(top_3_gen)
+print(top_5_platform)
+
+
+top_5_data = data.loc[data['Publisher'].isin(top_3_pub)& (data['Platform'].isin(top_5_platform)& (data['Genre'].isin(top_3_gen)))]
+
+print(top_5_data)
+
+sns.countplot(data=top_5_data,x='Publisher', hue='Platform')
 plt.show()
+
+df_stacked_plt=pd.crosstab(index=top_5_data['Publisher'], columns=top_5_data['Platform'])
+
+print('\n', df_stacked_plt)
+
+df_stacked_plt.plot(kind='bar', stacked = True)
+plt.show()
+
+
+sns.boxplot(x='Publisher', y='Global_Sales',data = top_5_data )
+
+plt.show()
+

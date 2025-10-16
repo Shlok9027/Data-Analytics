@@ -6,6 +6,8 @@ import seaborn as sns
 data = pd.read_csv("zomoto.csv")
 print(data.head())
 
+
+
             
 # print(data.tail()) 
 
@@ -20,7 +22,7 @@ data['rate'] = data['rate'].apply(handleRate)
 print(data.head())
 
 
-print(data.info)
+print(data.info)   
 # print(data.describe())
 
 
