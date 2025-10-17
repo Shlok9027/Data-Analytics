@@ -155,3 +155,15 @@ sns.boxplot(x='Publisher', y='Global_Sales',data = top_5_data )
 
 plt.show()
 
+
+top_5_data = top_5_data.select_dtypes(include='number')
+
+
+print(top_5_data)
+
+
+sns.heatmap(top_5_data.corr())
+plt.show()
+
+sns.pairplot(top_5_data)
+plt.show()

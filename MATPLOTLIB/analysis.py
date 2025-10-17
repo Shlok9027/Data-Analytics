@@ -56,17 +56,65 @@
 
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# fruits = ['Apple', 'Orange', 'Mango', 'Lemon', 'Kasmiri Apple']
+# sales = [400, 800, 360, 1000, 400]
+
+# plt.bar(fruits, sales)
+# plt.title('Sales Report')
+# plt.xlabel('fruits')
+# plt.ylabel('Sales per year')
+# plt.tight_layout()
+
+
+# plt.show()
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# fruits = ['Apples', 'Bananas', 'Cherries', 'Dates']
+# sales = [400, 350, 300, 450]
+
+# plt.bar(fruits, sales, color='violet')
+# plt.title('Fruit Sales')
+# plt.xlabel('Fruits')
+# plt.ylabel('Sales')
+# plt.show()
+
+# import matplotlib.pyplot as plt
+# import pandas as pd
+
+# fruits = ['Apples', 'Bananas', 'Cherries', 'Dates']
+# sales = [400, 350, 300, 450]
+
+# plt.barh(fruits,sales, color='black')
+# plt.title('Fruit Sales')
+# plt.xlabel('Fruits')
+# plt.ylabel('Sales')
+# plt.show()
+
+
+
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
-fruits = ['Apple', 'Orange', 'Mango', 'Lemon', 'Kasmiri Apple']
-sales = [400, 800, 360, 1000, 400]
+barwidth =  0.25
+fig = plt.subplots(figsize=(12,8))
 
-plt.bar(fruits, sales)
-plt.title('Sales Report')
-plt.xlabel('fruits')
-plt.ylabel('Sales per year')
-plt.tight_layout()
+CSE = [12,54,2,56,323,1,433]
+AIML = [34,64,31,23,31,2, 21]
+DATA_SCIENCE = [43,23,6,45,766,345]
 
 
-plt.show()
+br1 = np.arange(len(CSE))
+br2 = [x + barwidth for x in br1]
+br2 = [x + barwidth for x in br2]
+
+plt.bar(br1, CSE, color = 'r', width=barwidth, edgecolor = 'grey', label='CSE')
+
+plt.bar(br2, AIML, color = 'g', width= barwidth, edgecolor = 'grey', label='ECE')
+
+plt.bar(bar3, DATA_SCIENCE, color = 'b')
