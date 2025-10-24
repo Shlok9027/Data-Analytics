@@ -178,15 +178,112 @@
 # plt.show()
 
 
-import matplotlib.pyplot as plt 
+# import matplotlib.pyplot as plt 
+
+
+# import numpy as np
+
+# x = [1, 2, 3, 4, 5]
+# y = [2, 3, 5, 7, 11]
+# sizes = [30, 80, 150, 200, 300]  # Bubble sizes
+
+# plt.scatter(x, y, s=sizes, alpha=0.5, edgecolors='blue', linewidths=2)
+# plt.title("Bubble Plot Example")
+# plt.xlabel("X-axis")
+# plt.ylabel("Y-axis")
+# plt.show()
+
+
+# # # # # # Histogram # # # # # # 
+
+
+# import matplotlib.pyplot as plt
+
+# import numpy as np
+
+# data = np.random.randn(1000)
+
+# plt.hist(data, bins=50, color='pink', edgecolor='black')
+
+# plt.xlabel('X Data')
+# plt.ylabel('Y Data')
+# plt.title('Random Data')
+
+# plt.show()
+
+
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# import numpy as np
+
+# data = np.random.randn(1000)
+
+# sns.histplot(data, bins=30, kde=True, color='pink', edgecolor='black')
+
+# plt.xlabel("Values")
+# plt.ylabel("Density")
+# plt.title("Customized Histogram with Density Plot")
+
+
+# plt.show()
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+
+# data1 = np.random.rand(1000)
+
+# # print(data1)
+# data2= np.random.normal(loc=3, scale=1,size=1000)
+
+
+# fig, axes = plt.subplots(nrows=1 , ncols=2 , figsize=(12, 5) )
+
+# axes[0].hist(data1, bins=30, color='yellow', edgecolor='black')
+# axes[0].set_title('Histogram 1')
+
+# axes[1].hist(data2, bins=30, color='orange', edgecolor='black')
+# axes[1].set_title('Histogram 2')
+
+# for ax in axes:
+#     ax.set_xlabel('Values')
+#     ax.set_ylabel('Frequency')
+
+# plt.tight_layout()
+
+# plt.show()
+
+
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# data1 = np.random.randn(1000)
+# data2 = np.random.normal(loc=3, scale=1 ,size=1000)
+
+# plt.hist([data1, data2], bins=30, color=['pink', 'purple'] , stacked=True, edgecolor='black')
+
+# plt.xlabel("Values")
+# plt.ylabel("Frequency")
+
+# plt.title("Stacked Histogram")
+
+# plt.legend(['Data 1', 'Data 2'])
+
+# plt.show()
+
+
+ # # # # # # # # # # # # # # # # PIE CHART # # # # # # # # # # # # # # # # # # # 
+
+
+import matplotlib.pyplot as plt
 import numpy as np
 
-x = [1, 2, 3, 4, 5]
-y = [2, 3, 5, 7, 11]
-sizes = [30, 80, 150, 200, 300]  # Bubble sizes
+cars = ['BMW', 'AUDI', 'FORD', 'TESLA', 'HONDA','TOYOTA']
 
-plt.scatter(x, y, s=sizes, alpha=0.5, edgecolors='blue', linewidths=2)
-plt.title("Bubble Plot Example")
-plt.xlabel("X-axis")
-plt.ylabel("Y-axis")
+data = [354,322,243,325,265,299]
+
+fig = plt.figure(figsize=(8,6))
+
+plt.pie(data, labels=cars, autopct='%1.1f%%', startangle=140)
+
 plt.show()
