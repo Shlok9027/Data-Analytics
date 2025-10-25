@@ -307,10 +307,10 @@ colors = ['red', 'blue', 'beige', 'orange', 'purple', 'yellow']
 # Green border around each wedge
 wp = {'linewidth': 1, 'edgecolor': 'green'}
 
-# Function to format percentage + actual value
-def func(pct, allvalues):
-    absolute = int(pct / 100. * np.sum(allvalues))
-    return "{:.1f}%\n({:d} g)".format(pct, absolute)
+# # Function to format percentage + actual value
+# def func(pct, allvalues):
+#     absolute = int(pct / 100. * np.sum(allvalues))
+#     return "{:.1f}%\n({:d} g)".format(pct, absolute)
 
 # Create figure and axis
 fig, ax = plt.subplots(figsize=(10, 7))
@@ -318,7 +318,7 @@ fig, ax = plt.subplots(figsize=(10, 7))
 # Create pie chart
 wedges, texts, autotexts = ax.pie(
     data,
-    autopct=lambda pct: func(pct, data),
+    autopct="%1.1f%%",
     explode=explode,
     labels=cars,
     shadow=True,
@@ -343,6 +343,6 @@ plt.setp(autotexts, size=8, weight="bold")
 
 # Title of the chart
 ax.set_title("Car Sales Distribution")
-
+plt.savefig('pie_chart.png')
 # Display chart
 plt.show()
