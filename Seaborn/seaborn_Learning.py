@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 
-data = pd.read_csv('Data_Visualization/vgsales.csv')
+data = pd.read_csv('C:/Users/shrey/SHLOK Python Code/Seaborn/vgsales.csv')
 
 print(data.head())
 print(data.tail())
